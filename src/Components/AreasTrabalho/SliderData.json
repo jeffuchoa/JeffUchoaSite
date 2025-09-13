@@ -6,7 +6,7 @@
     "descrisao": "Confira meu portfólio de Modelagem 3D",
     "cor": "",
     "type":"canva",
-    "icon":"/cube.png"
+    "icon":"./cube.png"
   },
   {
     "id": 1,
@@ -14,7 +14,7 @@
     "titulo": "Identidade Visual",
     "descrisao": "Confira meu portfólio de Identidade Visual",
     "type":"img",
-    "icon":"/image.png"
+    "icon":"./image.png"
     
   },
   {
@@ -23,7 +23,7 @@
     "titulo": "Edição de Vídeo",
     "descrisao": "Confira meu portfólio de Edição de Vídeo",
     "type":"video",
-    "icon":"/play.png"
+    "icon":"./play.png"
   },
   {
     "id": 4,
@@ -31,7 +31,7 @@
     "titulo": "Motion Design",
     "descrisao": "Confira meu portfólio de Motion Design",
     "type":"video",
-    "icon":"/motion.png"
+    "icon":"./motion.png"
   },
   {
     "id": 5,
@@ -39,7 +39,7 @@
     "titulo": "Motion Design",
     "descrisao": "Confira meu portfólio de Motion Design",
     "type":"motion",
-    "icon":"/motion.png"
+    "icon":"./motion.png"
   }
   
 ]
