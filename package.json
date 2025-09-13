@@ -2,7 +2,7 @@
   "name": "jeffuchoa",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/jeffuchoa/JeffUchoaSite",
+  "homepage": "https://jeffuchoa.github.io/JeffUchoaSite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
