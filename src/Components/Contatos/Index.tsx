@@ -1,7 +1,7 @@
 import styles from './style.module.scss';
 import Rounded from '../../common/RoundedButton';
 import { useRef } from 'react';
-import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
+import { useScroll, motion, useTransform } from 'framer-motion';
 import Magnetic from '../../common/Magnetic/Magnetic';
 import behance from '../../assets/Images/mage_behance.png';
 import linkedin from '../../assets/Images/mdi_linkedin.png';

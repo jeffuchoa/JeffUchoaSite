@@ -1,6 +1,4 @@
 import './AreaTrabalho.css';
-import greg from "../../assets/Images/greg.png"
-import cube from "../../assets/Images/cube.png"
 import seta from "../../assets/Images/arrow.png"
 import setaDireita from "../../assets/Images/ayia.jpg"
 import setaEsquerda from "../../assets/Images/Vectooor 1.png"
@@ -8,10 +6,9 @@ import slides from './SliderData.json';
 import { useState } from 'react';
 import React, { useRef,useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import {  useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { Environment } from "@react-three/drei";
-import { useSpring, a } from "@react-spring/three";
 
 
 type AnimatedMeshProps = {
