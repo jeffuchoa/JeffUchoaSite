@@ -84,7 +84,7 @@ function AnimatedMesh({
 }
 
 const BlenderModel: React.FC = () => {
-    const { nodes, materials  } = useGLTF("/models/greg2c.glb") as any;
+    const { nodes, materials  } = useGLTF("./models/greg2c.glb") as any;
     
     materials["Material.008"].roughness = 0;
     materials["Material.008"].metalness = 0.5;

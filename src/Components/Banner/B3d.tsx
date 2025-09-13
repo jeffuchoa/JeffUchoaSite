@@ -44,7 +44,7 @@ function AnimatedMesh({
 }
 
 const BlenderModel: React.FC = () => {
-  const { nodes } = useGLTF("/models/cube.glb") as any;
+  const { nodes } = useGLTF("./models/floating_shapes4.glb") as any;
 
   return (
     <group>
@@ -80,4 +80,4 @@ const App: React.FC = () => {
 
 export default App;
 
-useGLTF.preload("/models/floating_shapes4.glb");
+useGLTF.preload("./models/floating_shapes4.glb");
