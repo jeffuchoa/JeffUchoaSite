@@ -1,0 +1,45 @@
+ [
+  {
+    "id": 0,
+    "image": "/sliderImg/greg.png",
+    "titulo": "Modelagem 3D",
+    "descrisao": "Confira meu portfólio de Modelagem 3D",
+    "cor": "",
+    "type":"canva",
+    "icon":"/cube.png"
+  },
+  {
+    "id": 1,
+    "image": "/greg.png",
+    "titulo": "Identidade Visual",
+    "descrisao": "Confira meu portfólio de Identidade Visual",
+    "type":"img",
+    "icon":"/image.png"
+    
+  },
+  {
+    "id": 3,
+    "image": "/animacao.mp4",
+    "titulo": "Edição de Vídeo",
+    "descrisao": "Confira meu portfólio de Edição de Vídeo",
+    "type":"video",
+    "icon":"/play.png"
+  },
+  {
+    "id": 4,
+    "image": "/motion.mp4",
+    "titulo": "Motion Design",
+    "descrisao": "Confira meu portfólio de Motion Design",
+    "type":"video",
+    "icon":"/motion.png"
+  },
+  {
+    "id": 5,
+    "image": "/motion.mp4",
+    "titulo": "Motion Design",
+    "descrisao": "Confira meu portfólio de Motion Design",
+    "type":"motion",
+    "icon":"/motion.png"
+  }
+  
+]

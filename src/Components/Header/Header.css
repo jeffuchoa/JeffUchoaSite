@@ -1,0 +1,225 @@
+
+@font-face {
+    font-family: titulo;
+    src: url(../../assets/Fonts/Inter.ttf);
+  }
+  @font-face {
+    font-family: paragrafo;
+    src: url(../../assets/Fonts/Inter.ttf);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.LogoFeira {
+    height: 60px;
+    cursor: pointer;
+    
+    @media (max-width: 890px){
+        height: auto;
+        height: 40px;
+        width: auto;
+    }
+    @media (max-width: 720px){
+        height: auto;
+        height: 30px;
+        width: auto;
+    }
+}
+
+.header{
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    transition: .3s ease-in;
+    top: 0;
+    
+    @media (max-width: 852px){
+        padding-right: 50px;
+        padding: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (max-width: 720px){
+        padding-right: 0px;
+        padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.header-bg{
+   background-color :#161616;
+}
+
+.InsideHeader{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+
+    @media (max-width: 720px){
+        padding-right: 50px;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
+.InsideHeader a{
+    margin-bottom: 0px;
+}
+
+.OpcaoHeader{
+    color: aliceblue;
+    margin-left: 30px;
+    font-family: titulo;
+    font-size:medium;
+    font-weight:300;
+    cursor: pointer;
+    margin-bottom: 0px;
+    
+
+
+    @media (max-width: 720px){
+        width: 80%;
+        margin-bottom: 30px !important;
+        font-family: titulo;
+        border-bottom: 0.12rem solid rgb(80, 80, 80);
+
+    }
+
+    @media (max-width: 450px){
+        width: 80%;
+        margin-bottom: 30px !important;
+        font-family: titulo;
+        margin-left: 10px;
+        border-bottom: 0.12rem solid rgb(80, 80, 80);
+
+    }
+
+ 
+
+}
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+.Personagens{
+    position:absolute;
+    z-index: 2;
+    
+}
+
+.BotaoMenuHeader{
+    display: none;
+
+    @media (max-width: 720px){
+        display: flex;
+        position: absolute;
+        z-index: 100;
+        margin-right: 0px;
+        right: 0;
+        padding: inherit;
+    }
+
+    @media (max-width: 720px){
+        height: 20px;
+        right: 0;
+    }
+
+}
+
+.MenuNavegacao{
+    display: none;
+
+    @media (max-width: 720px){
+        display: flex;
+        font-family: titulo;
+        font-size: 5vw;
+        color: aliceblue;
+        margin-bottom: 30px;
+        text-wrap: wrap;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 690px){
+        font-size: 7vw;
+    }
+}
+
+.OpcoesHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 720px){
+        position: absolute;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #161616;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 20px;
+        transition: 0.5s ease-in;
+    }
+
+    @media (max-width: 300px){
+        position: absolute;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #161616;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        padding: 5px;
+    }
+    
+}
+
+.OpcoesHeader.active{
+    right: 0;
+}
+
+.LogoCompletaMenu{
+    display: none;
+
+    @media (max-width: 720px){
+        display: flex;
+        width: 70%;
+        opacity: 0.5;
+    }
+    @media (max-width: 690px){
+        display: flex;
+        width: 50%;
+        opacity: 0.5;
+    }
+}
