@@ -1,7 +1,7 @@
  [
   {
     "id": 0,
-    "image": "/sliderImg/greg.png",
+    "image": "./sliderImg/greg.png",
     "titulo": "Modelagem 3D",
     "descrisao": "Confira meu portfólio de Modelagem 3D",
     "cor": "",
@@ -10,7 +10,7 @@
   },
   {
     "id": 1,
-    "image": "/greg.png",
+    "image": "./greg.png",
     "titulo": "Identidade Visual",
     "descrisao": "Confira meu portfólio de Identidade Visual",
     "type":"img",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "/animacao.mp4",
+    "image": "./animacao.mp4",
     "titulo": "Edição de Vídeo",
     "descrisao": "Confira meu portfólio de Edição de Vídeo",
     "type":"video",
@@ -27,7 +27,7 @@
   },
   {
     "id": 4,
-    "image": "/motion.mp4",
+    "image": "./motion.mp4",
     "titulo": "Motion Design",
     "descrisao": "Confira meu portfólio de Motion Design",
     "type":"video",
@@ -35,7 +35,7 @@
   },
   {
     "id": 5,
-    "image": "/motion.mp4",
+    "image": "./motion.mp4",
     "titulo": "Motion Design",
     "descrisao": "Confira meu portfólio de Motion Design",
     "type":"motion",
