@@ -44,7 +44,7 @@ function AnimatedMesh({
 }
 
 const BlenderModel: React.FC = () => {
-  const { nodes } = useGLTF("./models/floating_shapes4.glb") as any;
+  const { nodes } = useGLTF("./models/floating_shapes5.glb") as any;
 
   return (
     <group>
@@ -68,7 +68,7 @@ const App: React.FC = () => {
   return (
     <Canvas
       style={{ width: "100%", height: "100vh", backgroundColor: '#ccc5c5' }}
-      camera={{ position: [100, 0, 50], fov: 60 }}
+      camera={{ position: [100, 0, 0], fov: 60 }}
       shadows 
     >
       <ambientLight intensity={1.5} />
@@ -80,4 +80,4 @@ const App: React.FC = () => {
 
 export default App;
 
-useGLTF.preload("./models/floating_shapes4.glb");
+useGLTF.preload("./models/floating_shapes5.glb");

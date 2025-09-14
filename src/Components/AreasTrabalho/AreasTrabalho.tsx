@@ -6,7 +6,7 @@ import slides from './SliderData.json';
 import { useState } from 'react';
 import React, { useRef,useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import {  useGLTF } from "@react-three/drei";
+import {  Center, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { Environment } from "@react-three/drei";
 
@@ -29,8 +29,8 @@ function AnimatedMesh({
     const opacity = useRef(0);
 
     
-    const baseRotation = 55; 
-    const amplitude = Math.PI / 6; 
+    const baseRotation = 18025; 
+    const amplitude = Math.PI / 20; 
 
     useFrame((state, delta) => {
 
@@ -46,7 +46,7 @@ function AnimatedMesh({
         }
 
         if (ref.current) {
-            ref.current.rotation.y += delta * speed * 0.5 * direction.current;
+            ref.current.rotation.y += delta * speed * 1 * direction.current;
 
             
             const maxAngle = baseRotation + amplitude;
@@ -74,7 +74,7 @@ function AnimatedMesh({
             ref={ref}
             geometry={node.geometry}
             material={node.material}
-            position={[1, 1, 1]}
+            position={[0, 1, 1]}
             scale={node.scale}
 
         >
@@ -99,9 +99,9 @@ const BlenderModel: React.FC = () => {
                     <AnimatedMesh
                         key={i}
                         node={mesh}
-                        speed={0.2}       
+                        speed={0.1}       
                         float={0.2}         
-                        dirY={3}     
+                            
                     />
                 ))}
         </group>
@@ -240,8 +240,10 @@ function App() {
                                                
                                                 <ambientLight intensity={0} /> {/* luz suave global */}
 
-
-                                                <BlenderModel />
+                                               
+                                                    <BlenderModel />
+                                               
+                                                
 
                                                 <Environment preset="lobby" background={false} />
                                             </Canvas>}

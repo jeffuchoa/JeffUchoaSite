@@ -1,102 +1,131 @@
-.AreaTrabalho{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-    position: relative;
-    height: auto;
+.AreaTrabalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: 568px) {
+    margin-top: 40px;
+  }
 }
 
-.modelagem{
-    width: 100%;
-    height: 400px;
-    margin-top: 60px;
+.modelagem {
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+
+  @media (max-width: 568px) {
+    height: 500px;
+  }
 }
 
-.content{
+.content {
   color: #000000;
+  
 }
 
-.content.video2{
+.content.video2 {
   color: #eeeeee;
 }
 
-.content.video2 p{
+.content.video2 p {
   color: #eeeeee;
 }
 
-.video{
+.video {
   height: fit-content;
   display: flex;
   overflow: hidden;
   border-radius: 20px;
-   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
 
 }
 
-.video{
+.video {
   height: fit-content;
   display: flex;
   overflow: hidden;
   border-radius: 20px;
-   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
 
 }
 
 
-.pra-traz{
+.pra-traz {
   z-index: 20;
   margin-left: 5%;
 }
 
-.modelagemfaixa{
-    position: absolute;
-    display: flex;
-    background-color: #0DB7D3;
-    width: 100%;
+.modelagemfaixa {
+  position: absolute;
+  display: flex;
+  background-color: #0DB7D3;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  overflow: hidden;
+  anchor-name: --my-anchor;
+
+  @media (max-width: 568px) {
     height: 80%;
-    bottom: 0;
-    overflow: hidden;
-    anchor-name: --my-anchor;
+
+  }
 
 }
 
-.videofaixa{
+.videofaixa {
   position: absolute;
   transform: scale(1);
   z-index: 0;
   transform-origin: center center;
-  filter: blur(30px) brightness(0.7); /* desfoca e escurece */
-  transform: scale(1.2); /* cobre melhor o fundo */
+  filter: blur(30px) brightness(0.7);
+  /* desfoca e escurece */
+  transform: scale(1.2);
+  /* cobre melhor o fundo */
 }
 
-.modelageminformacoes{
-    margin-right: 100px;
+.modelageminformacoes {
+  margin-right: 100px;
 
-}
-
-.modelagemimg{
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    overflow: visible;
+  @media (max-width: 568px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 100px;
+
+  }
 }
 
-.Canva3DModelagem{
+.modelagemimg {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (max-width: 568px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.Canva3DModelagem {
   z-index: 21;
   width: 30% !important;
   height: 100%;
   position: relative;
-  overflow: visible !important; 
+  overflow: visible !important;
   /* aplica uma máscara que some no final (embaixo) */
-  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,50 +133,75 @@
   mask-image: linear-gradient(to top, black 90%, transparent 100%);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
+
+  @media (max-width: 568px) {
+    width: 100% !important;
+    height: 50% !important;
+
+    mask-image:
+      linear-gradient(to bottom, transparent 0%, black 40%),
+      linear-gradient(to top, transparent 0%, black 40%);
+    mask-repeat: no-repeat, no-repeat;
+    mask-position: top, bottom;
+    mask-size: 100% 50%, 100% 50%;
+  }
 }
 
-.caixavideo{
+.caixavideo {
   z-index: 21;
   width: 30% !important;
   height: 80%;
   position: relative;
-  overflow: visible !important; 
+  overflow: visible !important;
   /* aplica uma máscara que some no final (embaixo) */
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
-.fotoGreg{
-    height: 650px;
+.fotoGreg {
+  height: 650px;
 }
 
-.icone{
-    height: 100px;
-    margin-top: 20px;
+.icone {
+  height: 100px;
+  margin-top: 20px;
 }
 
-.icone2{
-    height: 100px;
-    margin-top: 20px;
+.icone2 {
+  height: 100px;
+  margin-top: 20px;
+
+  @media (max-width: 568px) {
+    height: 50px;
+  }
 }
 
 .botaoTrabalho {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    background-color: aliceblue;
-    height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  background-color: aliceblue;
+  height: 50px;
+
+  @media (max-width: 568px) {
+    height: 40px;
+    margin-top: 5px;
+  }
 }
 
 .seta {
-    height: 15px;
-    margin-left: 40px;
+  height: 15px;
+  margin-left: 40px;
+
+  @media (max-width: 568px) {
+    height: 13px;
+  }
 }
 
-.css-ohwg9z{
+.css-ohwg9z {
   width: 50%;
   margin-top: 100px;
   margin-bottom: 90px;
@@ -161,11 +215,11 @@
   width: 50%;
 }
 
-.image-nova{
- display: flex;
- opacity: 0.1;
- height: 40%;
- width: 40%;
+.image-nova {
+  display: flex;
+  opacity: 0.1;
+  height: 40%;
+  width: 40%;
 }
 
 .image {
@@ -203,12 +257,16 @@
   display: flex;
   position: absolute;
   flex-direction: row;
+
+
 }
-.descrisao-slide{
+
+.descrisao-slide {
   width: 40%;
   overflow-wrap: break-word;
   margin-left: 40px;
 }
+
 .modelagem.active {
   opacity: 1;
   position: static;
@@ -216,7 +274,7 @@
   transform: scale(1.08);
 }
 
-.image-slider{
+.image-slider {
   align-self: center;
   justify-self: center;
   justify-content: center;
@@ -230,11 +288,13 @@
   margin-bottom: 100px;
   position: relative;
 }
-.image-slider .slides{
+
+.image-slider .slides {
   width: 100%;
-  
+
 }
-.image-slider .pra-frente{
+
+.image-slider .pra-frente {
   display: flex;
   position: absolute;
   height: 600px;
@@ -247,41 +307,43 @@
   align-items: center;
   cursor: pointer;
 }
-.pra-frente img{
+
+.pra-frente img {
   opacity: 0.5;
   transition: 500ms;
   height: 40px;
-  
+
 }
 
-.pra-frente{
+.pra-frente {
   margin-right: 5%;
   z-index: 20;
   cursor: pointer;
-  
+
 }
 
-.pra-frente:hover img{
+.pra-frente:hover img {
   opacity: 1;
 }
 
-.pra-frente:hover{
-  
+.pra-frente:hover {
+
   opacity: 1;
 }
 
-.pra-traz{
+.pra-traz {
   cursor: pointer;
 
 }
-.image-slider .pra-traz{
- 
+
+.image-slider .pra-traz {
+
   display: flex;
   position: absolute;
   height: 600px;
-  margin-left:-110% ;
+  margin-left: -110%;
   width: 150px;
-  
+
   background-color: none;
   transition: 500ms;
   z-index: 10;
@@ -289,16 +351,18 @@
   align-items: center;
   cursor: pointer;
 }
-.pra-traz img{
+
+.pra-traz img {
   opacity: 0.5;
   transition: 500ms;
   height: 40px;
 }
-.pra-traz:hover img{
+
+.pra-traz:hover img {
   opacity: 1;
 }
 
-.slides .modelagem{
+.slides .modelagem {
   position: absolute;
   overflow: visible;
   font-size: 80px;
@@ -313,64 +377,73 @@
   width: 100%;
   height: 100%;
 }
-.image-slider .slides .modelagem.active{
+
+.image-slider .slides .modelagem.active {
   transform: translate(0, 0);
 }
 
-.aparecer_esquerda{
+.aparecer_esquerda {
   animation-name: direita_aparecer;
   animation-duration: 500ms;
 }
-.desativado{
+
+.desativado {
   width: 100%;
   height: 600px;
-  transform: translate(0,0);
+  transform: translate(0, 0);
   animation-name: esquerda;
   animation-duration: 500ms;
 }
-.aparecer_direita{
+
+.aparecer_direita {
   animation: direita_desaparecer;
   animation-direction: reverse;
   animation-duration: 500ms;
 
 }
 
-.slides .modelagem.meio_esquerda{
+.slides .modelagem.meio_esquerda {
   animation: meio_esquerda 500ms;
   transform: translate(-100vw, 0);
 }
 
 @keyframes fade-out {
-  from{
-      opacity: 1;
-  }to{
-      opacity: 0;
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 
 @keyframes meio_esquerda {
-  from{
-      transform: translate(0,0);
-  }to{
-      transform: translate(-100vw, 0);
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-100vw, 0);
   }
 }
 
-.slides .modelagem.direita_meio{
-  animation: direita_meio 500ms ;
+.slides .modelagem.direita_meio {
+  animation: direita_meio 500ms;
   transform: translate(0px, 0px);
 }
 
 
 @keyframes direita_meio {
-  from{
-      transform: translate(100vw, 0);
-  }to{
-      transform: translate(0px, 0px);
+  from {
+    transform: translate(100vw, 0);
+  }
+
+  to {
+    transform: translate(0px, 0px);
   }
 }
 
-.controles{
+.controles {
   display: flex;
   position: absolute;
   justify-content: space-between;
@@ -378,39 +451,43 @@
   bottom: anchor(--my-anchor bottom);
 }
 
-.slides .modelagem.meio_direita{
+.slides .modelagem.meio_direita {
   animation: meio_direita 500ms;
   transform: translate(100vw, 0);
 }
 
 @keyframes meio_direita {
-  from{
-      transform: translate(0,0);
-  }to{
-      transform: translate(100vw, 0);
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(100vw, 0);
   }
 }
 
-.slides .modelagem.esquerda_meio{
+.slides .modelagem.esquerda_meio {
   animation: esquerda-meio 500ms;
   transform: translate(0, 0);
 }
 
 @keyframes esquerda-meio {
-  from{
-      transform: translate(-100vw,0);
-  }to{
-      transform: translate(0px, 0);
+  from {
+    transform: translate(-100vw, 0);
+  }
+
+  to {
+    transform: translate(0px, 0);
   }
 }
 
-.animation_active_primeiro{
-  animation: direita_aparecer; 
+.animation_active_primeiro {
+  animation: direita_aparecer;
   animation-direction: reverse;
   animation-duration: 500ms;
 }
 
-.bolinhas .bolinha{
+.bolinhas .bolinha {
   background-color: #858484;
   height: 10px;
   width: 10px;
@@ -419,32 +496,41 @@
   margin-bottom: 10px;
   transition: 500ms;
 }
-.bolinhas .bolinha.active{
+
+.bolinhas .bolinha.active {
   background-color: rgb(255, 255, 255);
 }
-.bolinhas{
+
+.bolinhas {
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom:0px;
-  right: 45%;
+  bottom: 0px;
+
+  @media (max-width: 568px) {
+  
+  }
+  
 }
 
-.image-slider .texto h1{
+.image-slider .texto h1 {
   color: #000000;
 }
-.image-slider p{
-  font-size:medium;
-  
+
+.image-slider p {
+  font-size: medium;
+
   font-family: paragrafo;
   color: #363636;
 }
-.image-slider h1{
+
+.image-slider h1 {
   font-family: titulo;
   color: #363636;
 }
+
 .modelagem .conteudo {
-  font-size:medium;
+  font-size: medium;
   margin-left: 9%;
   display: flex;
   flex-direction: row;
@@ -452,34 +538,36 @@
   font-family: titulo;
   color: #363636;
 }
-.image-slider .conteudo{
-  
+
+.image-slider .conteudo {
+
   display: flex;
   position: absolute;
-  
+
   opacity: 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.image-slider .conteudo.active{
+
+.image-slider .conteudo.active {
   position: absolute;
   display: flex;
- 
+
   opacity: 1;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.image-slider .texto{
+.image-slider .texto {
   display: flex;
   flex-direction: column;
   margin-left: 9%;
   width: 40%;
 }
 
-.slidesimageslider{
+.slidesimageslider {
   width: 100%;
   display: flex;
   align-items: center;
