@@ -6,7 +6,7 @@
     justify-content: center;
     background-color: #141516;
     position: relative;
-    margin-top: 600px;
+    margin-top: 200px;
     .body{
         padding-top: 200px;
         width: 100%;
@@ -19,6 +19,11 @@
             margin-left: 200px;
             margin-right: 200px;
             position: relative;
+                @media (max-width: 568px) {
+                    margin-left: 40px;
+                    margin-right: 0;
+                    padding-bottom: 30px;
+                }
             span{
                 display: flex;
                 align-items: center;
@@ -29,9 +34,16 @@
                     border-radius: 50%;
                     overflow: hidden;
 
+                     @media (max-width: 568px) {
+                        width: 130px;
+                    }
+
                     img{
                         object-fit: cover;
                         height: 100px;
+                        @media (max-width: 568px) {
+                            height: 100px;
+                        }
                     }
                 }
                 h2{
@@ -44,11 +56,20 @@
                 margin: 0px;
                 font-weight: 300;
                 font-family: titulo;
+
+                @media (max-width: 568px) {
+                    font-size: 5vh;
+                }
             }
             .buttonContainer{
                 position: absolute;
                 left: calc(100% - 400px); 
                 top: calc(100% - 75px);
+
+                @media (max-width: 568px) {
+                    left:0;
+                    top:0;
+                }
             }
             .button{
                 width: 180px;
@@ -82,6 +103,18 @@
             margin-left: 200px;
             margin-right: 200px;
             flex-wrap:wrap;
+            margin-bottom: 80px;
+            @media (max-width: 568px) {
+               margin-top: 40px;
+                margin-left: 40px;
+                margin-right: 40px;   
+            }
+            .botaocontato{
+                @media (max-width: 568px) {
+               padding: 50px !important;
+            }
+
+            }
             p{
                 color: aliceblue;
                 margin-bottom: 0;
@@ -90,6 +123,11 @@
                 height: 40px;
                 margin-right: 20px;
                 z-index: 10;
+
+                @media (max-width: 568px) {
+                    height: 20px;
+                    margin-right: 10px;
+                }
             }
         }
             .info{
