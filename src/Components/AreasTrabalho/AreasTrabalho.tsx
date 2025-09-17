@@ -223,6 +223,7 @@ function App() {
                                     </div>
                                     {index === current && (
                                         <>
+                                        
                                             {slide.type === "img" && <div className="Canva3DModelagem"><img className='video' src={slide.image} alt={slide.titulo} /> </div>}
                                             {slide.type === "motion" && (
                                                 <div className="caixavideo">
@@ -232,21 +233,28 @@ function App() {
                                                 </div>
                                              
                                             )}
-                                            {slide.type === "canva" && <Canvas
-                                                className={'Canva3DModelagem'}
-                                                camera={{ position: [0, 0, 40], fov: 20 }}
-                                                shadows
-                                            >
-                                               
-                                                <ambientLight intensity={0} /> {/* luz suave global */}
+                                            {slide.type === "canva" && <div className="plataforma">
 
-                                               
-                                                    <BlenderModel />
-                                               
+                                            
+                                            
+                                                <Canvas
+                                                    className={'Canva3DModelagem'}
+                                                    camera={{ position: [0, 0, 40], fov: 20 }}
+                                                    shadows
+                                                >
                                                 
+                                                    <ambientLight intensity={0} /> {/* luz suave global */}
 
-                                                <Environment preset="lobby" background={false} />
-                                            </Canvas>}
+                                                
+                                                        <BlenderModel />
+                                                
+                                                    
+
+                                                    <Environment preset="lobby" background={false} />
+                                                </Canvas>
+                                            </div>
+                                            }
+                                            
                                         </>
                                     )}
 

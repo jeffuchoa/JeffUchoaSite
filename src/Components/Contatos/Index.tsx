@@ -11,16 +11,9 @@ import foto from '../../assets/Images/Minha Foto.png';
 import zap from '../../assets/Images/basil_whatsapp-solid.png';
 
 export default function index() {
-    const container = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ["start end", "end end"]
-    })
-    const x = useTransform(scrollYProgress, [0, 1], [0, 100])
-    const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
-    const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
+
     return (
-        <motion.div style={{y}} ref={container} className={styles.contact}>
+        <motion.div className={styles.contact}>
             <div className={styles.body}>
                 <div className={styles.title}>
                     <span>

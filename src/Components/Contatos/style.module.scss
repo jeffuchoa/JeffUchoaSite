@@ -1,4 +1,4 @@
-.contact{
+.contact {
     color: white;
     display: flex;
     flex-direction: column;
@@ -7,51 +7,63 @@
     background-color: #141516;
     position: relative;
     margin-top: 200px;
-    .body{
+    height: 100vh;
+
+    @media (max-width: 568px) {
+        margin-top: 30px;
+    }
+
+    .body {
         padding-top: 200px;
         width: 100%;
         max-width: 1800px;
         background-color: #141516;
 
-        .title{
+        .title {
             border-bottom: 1px solid rgb(134, 134, 134);
             padding-bottom: 100px;
             margin-left: 200px;
             margin-right: 200px;
             position: relative;
-                @media (max-width: 568px) {
-                    margin-left: 40px;
-                    margin-right: 0;
-                    padding-bottom: 30px;
-                }
-            span{
+
+            @media (max-width: 568px) {
+                margin-left: 40px;
+                margin-right: 0;
+                padding-bottom: 30px;
+            }
+
+            span {
                 display: flex;
                 align-items: center;
-                .imageContainer{
+
+                .imageContainer {
                     width: 100px;
                     height: 100px;
                     position: relative;
                     border-radius: 50%;
                     overflow: hidden;
 
-                     @media (max-width: 568px) {
+                    @media (max-width: 568px) {
                         width: 130px;
                     }
 
-                    img{
+                    img {
                         object-fit: cover;
                         height: 100px;
+
                         @media (max-width: 568px) {
                             height: 100px;
                         }
                     }
                 }
-                h2{
+
+                h2 {
                     margin-left: 0.3em;
                     font-family: titulo;
                 }
             }
-            h2{
+
+            h2 {
                 font-size: 5vw;
                 margin: 0px;
                 font-weight: 300;
@@ -61,17 +73,19 @@
                     font-size: 5vh;
                 }
             }
-            .buttonContainer{
+
+            .buttonContainer {
                 position: absolute;
-                left: calc(100% - 400px); 
+                left: calc(100% - 400px);
                 top: calc(100% - 75px);
 
                 @media (max-width: 568px) {
-                    left:0;
-                    top:0;
+                    left: 0;
+                    top: 0;
                 }
             }
-            .button{
+
+            .button {
                 width: 180px;
                 height: 180px;
                 background-color: #455CE9;
@@ -82,7 +96,8 @@
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
-                p{
+
+                p {
                     margin: 0px;
                     font-size: 16px;
                     font-weight: 300;
@@ -90,36 +105,42 @@
                     position: relative;
                 }
             }
-            svg{
+
+            svg {
                 position: absolute;
                 top: 30%;
                 left: 100%;
             }
         }
-        .nav{
+
+        .nav {
             display: flex;
             gap: 20px;
             margin-top: 100px;
             margin-left: 200px;
             margin-right: 200px;
-            flex-wrap:wrap;
+            flex-wrap: wrap;
             margin-bottom: 80px;
+
             @media (max-width: 568px) {
-               margin-top: 40px;
+                margin-top: 40px;
                 margin-left: 40px;
-                margin-right: 40px;   
-            }
-            .botaocontato{
-                @media (max-width: 568px) {
-               padding: 50px !important;
+                margin-right: 40px;
             }
 
+            .botaocontato {
+                @media (max-width: 568px) {
+                    padding: 50px !important;
+                }
+
             }
-            p{
+
+            p {
                 color: aliceblue;
                 margin-bottom: 0;
             }
-            img{
+
+            img {
                 height: 40px;
                 margin-right: 20px;
                 z-index: 10;
@@ -130,53 +151,61 @@
                 }
             }
         }
-            .info{
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            padding: 20px;
+
+            div {
                 display: flex;
-                justify-content: space-between;
-                margin-top: 100px;
-                padding: 20px;
-                div{
-                    display: flex;
-                    gap: 10px;
-                    align-items: flex-end;
-                    p, h3{
-                        margin: 0px;
-                        padding: 2.5px;
-                        cursor: pointer;
+                gap: 10px;
+                align-items: flex-end;
+
+                p,
+                h3 {
+                    margin: 0px;
+                    padding: 2.5px;
+                    cursor: pointer;
+                }
+
+                p {
+                    &::after {
+                        content: "";
+                        width: 0%;
+                        height: 1px;
+                        background-color: white;
+                        display: block;
+                        margin-top: 2px;
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: width 0.2s linear;
                     }
-                    p{
-                        &::after{
-                            content: "";
-                            width: 0%;
-                            height: 1px;
-                            background-color: white;
-                            display: block;
-                            margin-top: 2px;
-                            position: relative;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            transition: width 0.2s linear;
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
                         }
-                        &:hover{
-                            &::after{
-                                width: 100%;
-                            }
-                        }
-                    }
-                    span{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 15px;
-                    }
-                    h3{
-                        color: grey;
-                        cursor: default;
-                        font-weight: 300;
-                        font-size: 1em;
                     }
                 }
-                
+
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                h3 {
+                    color: grey;
+                    cursor: default;
+                    font-weight: 300;
+                    font-size: 1em;
+                }
             }
+
         }
-        
     }
+
+}
